@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Post
- * 
+ *
  * @property int $id
  * @property string|null $title
  * @property string|null $content
@@ -26,42 +26,39 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $admin_id
  * @property Carbon|null $updated_at
  * @property Carbon|null $created_at
- * 
  * @property Admin $admin
  * @property Category|null $category
- *
- * @package App\Models
  */
 class Post extends Model
 {
-	protected $table = 'posts';
+    protected $table = 'posts';
 
-	protected $casts = [
-		'category_id' => 'int',
-		'is_comment' => 'bool',
-		'is_featured' => 'bool',
-		'admin_id' => 'int',
-		'status' => PostStatus::class,
-		'seo_tags' => 'array',
-	];
+    protected $casts = [
+        'category_id' => 'int',
+        'is_comment' => 'bool',
+        'is_featured' => 'bool',
+        'admin_id' => 'int',
+        'status' => PostStatus::class,
+        'seo_tags' => 'array',
+    ];
 
-	protected $fillable = [
-		'title',
-		'content',
-		'category_id',
-		'seo_tags',
-		'seo_summery',
-		'thumbnail',
-		'admin_id'
-	];
+    protected $fillable = [
+        'title',
+        'content',
+        'category_id',
+        'seo_tags',
+        'seo_summery',
+        'thumbnail',
+        'admin_id',
+    ];
 
-	public function admin()
-	{
-		return $this->belongsTo(Admin::class);
-	}
+    public function admin()
+    {
+        return $this->belongsTo(Admin::class);
+    }
 
-	public function category()
-	{
-		return $this->belongsTo(Category::class);
-	}
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }

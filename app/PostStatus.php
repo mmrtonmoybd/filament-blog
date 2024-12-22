@@ -2,18 +2,18 @@
 
 namespace App;
 
-use Filament\Support\Contracts\HasLabel;
 use Filament\Support\Contracts\HasColor;
+use Filament\Support\Contracts\HasLabel;
 
-enum PostStatus: string implements HasLabel, HasColor
-
+enum PostStatus: string implements HasColor, HasLabel
 {
     case APPROVED = 'Approved';
     case UNAPPROVED = 'Unapproved';
     case PENDING = 'Pending';
-    
-    public function getLabel() : string {
-        return match($this) {
+
+    public function getLabel(): string
+    {
+        return match ($this) {
             self::APPROVED => 'Approved',
             self::UNAPPROVED => 'Unapproved',
             self::PENDING => 'Pending',
