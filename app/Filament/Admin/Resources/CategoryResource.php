@@ -16,6 +16,11 @@ class CategoryResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    public static function getNavigationGroup(): ?string
+    {
+        return 'Posts';
+    }
+
     public static function form(Form $form): Form
     {
         return $form
@@ -24,7 +29,7 @@ class CategoryResource extends Resource
                     ->required()
                     ->maxLength(255),
                 Forms\Components\Select::make('parent_id')
-                    ->relationship('category', 'name')
+                    ->options(Category::whereNull('parent_id')->get()->pluck('name', 'id'))
                     ->default(null),
             ]);
     }
