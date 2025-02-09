@@ -74,16 +74,16 @@
         },
         {
             "name": "aymanalhattami/filament-slim-scrollbar",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aymanalhattami/filament-slim-scrollbar.git",
-                "reference": "16d4f8ca45ad80739dea7a77f7173665653839ce"
+                "reference": "306e32e28e9506e5667c248d1f6a876339a7b4be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aymanalhattami/filament-slim-scrollbar/zipball/16d4f8ca45ad80739dea7a77f7173665653839ce",
-                "reference": "16d4f8ca45ad80739dea7a77f7173665653839ce",
+                "url": "https://api.github.com/repos/aymanalhattami/filament-slim-scrollbar/zipball/306e32e28e9506e5667c248d1f6a876339a7b4be",
+                "reference": "306e32e28e9506e5667c248d1f6a876339a7b4be",
                 "shasum": ""
             },
             "require": {
@@ -134,9 +134,9 @@
             ],
             "support": {
                 "issues": "https://github.com/aymanalhattami/filament-slim-scrollbar/issues",
-                "source": "https://github.com/aymanalhattami/filament-slim-scrollbar/tree/2.0.1"
+                "source": "https://github.com/aymanalhattami/filament-slim-scrollbar/tree/2.1.0"
             },
-            "time": "2024-09-22T14:25:47+00:00"
+            "time": "2025-02-03T14:21:04+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
