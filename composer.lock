@@ -2582,16 +2582,16 @@
         },
         {
             "name": "joshembling/image-optimizer",
-            "version": "v1.6.2",
+            "version": "v1.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joshembling/image-optimizer.git",
-                "reference": "a417849ef9b42431906c417d969f0efed25db81a"
+                "reference": "21481beeb9824fcf2d5efda00520491a41cae67b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joshembling/image-optimizer/zipball/a417849ef9b42431906c417d969f0efed25db81a",
-                "reference": "a417849ef9b42431906c417d969f0efed25db81a",
+                "url": "https://api.github.com/repos/joshembling/image-optimizer/zipball/21481beeb9824fcf2d5efda00520491a41cae67b",
+                "reference": "21481beeb9824fcf2d5efda00520491a41cae67b",
                 "shasum": ""
             },
             "require": {
@@ -2654,7 +2654,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-06-16T09:12:59+00:00"
+            "time": "2025-08-26T09:23:27+00:00"
         },
         {
             "name": "kirschbaum-development/eloquent-power-joins",
@@ -9234,16 +9234,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.44.0",
+            "version": "v1.45.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "a09097bd2a8a38e23ac472fa6a6cf5b0d1c1d3fe"
+                "reference": "019a2933ff4a9199f098d4259713f9bc266a874e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/a09097bd2a8a38e23ac472fa6a6cf5b0d1c1d3fe",
-                "reference": "a09097bd2a8a38e23ac472fa6a6cf5b0d1c1d3fe",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/019a2933ff4a9199f098d4259713f9bc266a874e",
+                "reference": "019a2933ff4a9199f098d4259713f9bc266a874e",
                 "shasum": ""
             },
             "require": {
@@ -9293,7 +9293,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2025-07-04T16:17:06+00:00"
+            "time": "2025-08-25T19:28:31+00:00"
         },
         {
             "name": "mockery/mockery",
