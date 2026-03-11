@@ -3,6 +3,8 @@
 namespace App\Filament\Admin\Resources\AdminResource\Pages;
 
 use App\Filament\Admin\Resources\AdminResource;
+use Filament\Facades\Filament;
+use Filament\Notifications\Auth\ResetPassword;
 use Filament\Resources\Pages\CreateRecord;
 use Illuminate\Support\Facades\Hash;
 
@@ -22,8 +24,8 @@ class CreateAdmin extends CreateRecord
         $user = $this->record;
         $user->markEmailAsVerified();
         $token = app('auth.password.broker')->createToken($user);
-        $notification = new \Filament\Notifications\Auth\ResetPassword($token);
-        $notification->url = \Filament\Facades\Filament::getResetPasswordUrl($token, $user);
+        $notification = new ResetPassword($token);
+        $notification->url = Filament::getResetPasswordUrl($token, $user);
         $user->notify($notification);
     }
 
